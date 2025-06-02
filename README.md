@@ -10,7 +10,7 @@ Recruiters often need to sift through hundreds of resumes for a single position,
 
 ## Solution
 
-The system uses natural language processing and machine learning techniques to analyze resume content and classify documents into appropriate categories (e.g., Software Engineering, Marketing, Finance, etc.). This automated categorization significantly reduces the time recruiters spend on initial resume screening.
+The system uses natural language processing and machine learning techniques to analyze resume content and classify documents into appropriate categories (e.g., Java Developer, Data Science, Sales, etc.). This automated categorization significantly reduces the time recruiters spend on initial resume screening.
 
 ## Key Features
 
