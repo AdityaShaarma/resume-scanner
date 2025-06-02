@@ -28,4 +28,4 @@ Allows recruiters to focus their expertise on candidate assessment rather than d
 
 ## Technical Implementation
 
-The system is built using [your specific tech stack, e.g., Python, scikit-learn, etc.] and leverages advanced text processing techniques to extract relevant features from resume texts. The trained model achieves 99.5% classification accuracy across 25 categories.
+The system is built using Python, scikit-learn, and pickle and leverages advanced text processing techniques to extract relevant features from resume texts. The trained model achieves 99.5% classification accuracy across 25 categories.
