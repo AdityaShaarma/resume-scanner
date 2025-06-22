@@ -45,7 +45,7 @@ Dataset: [Updated Resume Dataset on Kaggle](https://www.kaggle.com/datasets/jill
 - **Source**: [Updated Resume Dataset on Kaggle](https://www.kaggle.com/datasets/jillanisofttech/updated-resume-dataset)
 - **Size**: ~1,000 resumes across 25+ job categories
 - **Structure**: Each resume is paired with a labeled job role
-- **Limitation**: Some roles are overrepresented (e.g., Software Engineer)
+- **Limitation**: Some roles are overrepresented (e.g., Java Developer)
 
 ---
 
