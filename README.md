@@ -16,7 +16,6 @@ Dataset: [Updated Resume Dataset on Kaggle](https://www.kaggle.com/datasets/jill
 - [Modeling Approach](#modeling-approach)
 - [Results & Evaluation](#results--evaluation)
 - [Business Impact](#business-impact)
-- [Limitations](#limitations)
 - [Next Steps](#next-steps)
 - [Libraries Used](#libraries-used)
 - [Acknowledgments](#acknowledgments)
@@ -72,13 +71,25 @@ Dataset: [Updated Resume Dataset on Kaggle](https://www.kaggle.com/datasets/jill
 
 ![Resume Volume](images/resume_volume.png)
 
+This bar chart shows the number of resumes available per job category in the dataset. It helps uncover class imbalances (e.g., overrepresentation of Software Engineering), which is critical when evaluating model fairness and generalization.
+
+---
+
 ### Resume Length by Role
 
 ![Resume Length](images/resume_length.png)
 
+This boxplot displays the distribution of word counts across different job roles. It reveals that roles like Data Science and HR tend to have longer resumes, which can influence how much information the model learns per class. This informed our decision to use TF-IDF to normalize text representation regardless of length.
+
+---
+
 ### Word Clouds (All Roles)
 
 ![Word Cloud](images/wordcloud.png)
+
+These word clouds visualize the most common words across resumes for each job category. They offer an intuitive understanding of domain-specific vocabulary and reinforce that different roles prioritize different terminology (e.g., “Python” vs. “Client”).
+
+---
 
 ### TF-IDF Keyword Frequencies
 
@@ -90,7 +101,7 @@ Dataset: [Updated Resume Dataset on Kaggle](https://www.kaggle.com/datasets/jill
 
 ![TF-IDF Sales](images/tfidf_matrix_Sales.png)
 
-> Different roles display unique keyword distributions—Sales resumes focus on communication, while Data Science resumes emphasize tools and methods.
+These TF-IDF bar charts identify the most statistically important keywords for each role. For example, "machine learning" and "python" dominate in Data Science, while "salesforce" and "client" rank higher in Sales. This validated the choice of TF-IDF as a feature engineering technique and helped ensure role-specific separation for the model.
 
 ---
 
@@ -123,15 +134,21 @@ We evaluated multiple ML algorithms including Logistic Regression, SVM, and Rand
 | Model       | K-Nearest Neighbors    |
 | Consistency | High across categories |
 
+---
+
 ### Confusion Matrix
 
 ![Confusion Matrix](images/confusion_matrix.png)
+
+This confusion matrix visualizes how well the model performs across all 25 categories. The strong diagonal line indicates high classification accuracy, with minimal confusion between similar roles. It also highlights where underrepresented classes may need improvement.
+
+---
 
 ### TSNE Clustering
 
 ![TSNE](images/tsne.png)
 
-> t-SNE visualization confirms that resumes are clearly separable in embedded space.
+The t-SNE plot reduces high-dimensional TF-IDF vectors into 2D space for visualization. Each point represents a resume, and its position is determined by content similarity. The distinct clusters show that resumes naturally group into separable roles, validating the model’s ability to learn meaningful distinctions.
 
 ---
 
@@ -144,20 +161,10 @@ We evaluated multiple ML algorithms including Logistic Regression, SVM, and Rand
 
 ---
 
-## Limitations
-
-- Imbalanced class distribution (some roles underrepresented)
-- Dataset lacks real-world resume diversity (e.g., formatting, multi-language)
-- Does not currently understand nuanced roles (e.g., hybrid tech + sales)
-
----
-
 ## Next Steps
 
 - Integrate with HR systems (e.g., Workday, Greenhouse)
 - Retrain on live applicant resumes
-- Incorporate deep learning (e.g., BERT/GPT for semantic analysis)
-- Add resume feedback or optimization recommendations
 
 ---
 
