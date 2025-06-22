@@ -16,8 +16,7 @@ A high-speed, AI-powered resume screening tool that classifies resumes into 25+ 
 - [Business Impact](#business-impact)
 - [Limitations](#limitations)
 - [Next Steps](#next-steps)
-- [Installation & Usage](#installation--usage)
-- [Author](#author)
+- [Authors](#authors)
 
 ---
 
@@ -80,11 +79,11 @@ A high-speed, AI-powered resume screening tool that classifies resumes into 25+ 
 
 **Data Science Word Counts**
 
-![TF-IDF](images/tfidf_matrix_Data Science.png)
+![TF-IDF](../images/tfidf_matrix_Data Science.png)
 
 **Sales Word Counts**
 
-![TF-IDF](images/tfidf_matrix_Sales.png)
+![TF-IDF](../images/tfidf_matrix_Sales.png)
 
 - There is a clear difference between the keywords in a Data Science/Technical resume compared to a Sales resume
 
